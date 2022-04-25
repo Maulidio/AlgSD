@@ -99,20 +99,29 @@ public class Queue {
         return dt;
     }
 
-    public void peekPosition(int data){
-        for (int i =0; i < max; i++){
-            int peekPos = this.data[i];
-            if (peekPos == data){
-                System.out.println("Data " + data + " berada pada posisi index ke-" + i);
+    public void peekPosition(int dataDicari) {
+        int i = front;
+        int posisi = 1;
+        System.out.print("Data " + dataDicari + " berada pada posisi index ke-");
+        while(i != rear) {
+            if (data[i]==dataDicari){
+                System.out.print(posisi + " ");
             }
+            i = (i+1) % max;
+            posisi++;
         }
+        if (data[i] == dataDicari){
+            System.out.print(posisi + " ");
+        }
+        System.out.println();
     }
 
-    public void peekAt(int position){
-        for (int i = 0; i < max; i++){
-            if (i == position){
-                System.out.println("Data yang berada pada index ke-" + i + " adalah: " + this.data[i]);
-            }
+    public void peekAt(int position) {
+        int idxDicari = front;
+        System.out.print("Data yang berada pada index ke-" + position + " adalah : ");
+        for (int i = 0 ; i < position - 1 ; i++){
+            idxDicari = (idxDicari + 1) % max;
         }
+        System.out.println(data[idxDicari] + " ");
     }
 }

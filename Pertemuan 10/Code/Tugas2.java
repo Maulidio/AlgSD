@@ -1,7 +1,5 @@
 package Pertemuan10;
 
-import Pertemuan6.Mahasiswa;
-
 public class Tugas2 {
     String nim;
     String nama;

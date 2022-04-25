@@ -97,21 +97,30 @@ public class Tugas2Queue {
         }
     }
 
-    public void peekPosition(String nim){
-        for (int i =0; i < max; i++){
-            String peekPos = this.antrian[i].nim;
-            if (peekPos.equals(nim)){
-                System.out.println("Mahasiswa yang memiliki NIM " + nim + " berada pada posisi antrian ke-" + i);
+    public void peekPosition(String peekPos) {
+        int i = front;
+        int posisi = 1;
+        System.out.print("data " + peekPos + " ada pada posisi : ");
+        while(i != rear) {
+            if (antrian[i].nim.equals(peekPos)){
+                System.out.print(posisi + " ");
             }
+            i = (i+1) % max;
+            posisi++;
         }
+        if (antrian[i].nim.equals(peekPos)){
+            System.out.print(posisi + " ");
+        }
+        System.out.println();
     }
 
-    public void printMahasiswa(int posisi){
-        for (int i = 0; i < max; i++){
-            if (i == posisi){
-                System.out.println("Data yang berada pada antrian ke-" + i + " adalah: " + antrian[i].nim + " " + antrian[i].nama + " " + antrian[i].absen + " " + antrian[i].ipk);
-            }
+    public void printMahasiswa(int position) {
+        int idxCari = front;
+        System.out.print("Data pada posisi " + position + " adalah : ");
+        for (int i = 0 ; i < position - 1 ; i++){
+            idxCari = (idxCari + 1) % max;
         }
+        System.out.println(antrian[idxCari].nim + " " + antrian[idxCari].nama + " " + " " + antrian[idxCari].absen + " " + antrian[idxCari].ipk);
     }
 
 }
