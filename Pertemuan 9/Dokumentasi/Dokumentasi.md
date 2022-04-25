@@ -10,7 +10,8 @@
 <img src = SS1.png>
 2. data yang tersimpan pada variabel p ialah data pada variabel jenis, warna, merk, ukuran, dan biaya (data dari objek pakaian)
 3. fungsi dari do-while untuk perulangan pada statement menambahkan data pakaian diulang Kembali atau tidak.
-4. ```java
+4.
+```java
     do{
             System.out.println("==========STACK===========");
             System.out.println("Pilihan");
@@ -57,9 +58,9 @@
                 }
             }
         } while (true);
-    ```
-    hasil run
-    <img src = SS2.png>
+```
+hasil run
+<img src = SS2.png>
 
 ### **Pertanyaan 7.3.3**
 1. alur kerja pada method derajat, pada method ini nilai dari variabel c yang berisi
