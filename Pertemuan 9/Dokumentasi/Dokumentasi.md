@@ -10,55 +10,55 @@
 <img src = SS1.png>
 2. data yang tersimpan pada variabel p ialah data pada variabel jenis, warna, merk, ukuran, dan biaya (data dari objek pakaian)
 3. fungsi dari do-while untuk perulangan pada statement menambahkan data pakaian diulang Kembali atau tidak.
-4.
-```java
+
+4. ```java
     do{
-            System.out.println("==========STACK===========");
-            System.out.println("Pilihan");
-            System.out.println("1. push");
-            System.out.println("2. pop");
-            System.out.println("3. peek");
-            System.out.println("4. print");
-            System.out.println("5. keluar");
-            System.out.println("(ketik 1 / 2 / 3 / 4 / 5)");
-            char pilih = sc.next().charAt(0);
-            if (pilih == '1'){
-                sc.nextLine();
-                System.out.print("Jenis: ");
-                String jenis = sc.nextLine();
-                System.out.print("Warna: ");
-                String warna = sc.nextLine();
-                System.out.print("Merk: ");
-                String merk = sc.nextLine();
-                System.out.print("Ukuran: ");
-                String ukuran = sc.nextLine();
-                System.out.print("Harga: ");
-                double harga = sc.nextDouble();
-                Pakaian p = new Pakaian(jenis, warna, merk, ukuran, harga);
-                stk.push(p);
-            } else if (pilih == '2'){
-                stk.pop();
-            } else if (pilih == '3'){
-                stk.peek();
-            } else if (pilih == '4'){
-                stk.print();
-            } else if (pilih == '5'){
-                System.out.println("Terimakasih");
-                break;
-            } else {
-                System.out.println("Input yang anda masukkan salah");
-                System.out.println("==============================");
-                System.out.println("Apakah anda ingin mengulang input? (y/n)");
-                char pilihan = sc.next().charAt(0);
-                if (pilihan == 'y'){
-                    continue;
-                } else {
+                System.out.println("==========STACK===========");
+                System.out.println("Pilihan");
+                System.out.println("1. push");
+                System.out.println("2. pop");
+                System.out.println("3. peek");
+                System.out.println("4. print");
+                System.out.println("5. keluar");
+                System.out.println("(ketik 1 / 2 / 3 / 4 / 5)");
+                char pilih = sc.next().charAt(0);
+                if (pilih == '1'){
+                    sc.nextLine();
+                    System.out.print("Jenis: ");
+                    String jenis = sc.nextLine();
+                    System.out.print("Warna: ");
+                    String warna = sc.nextLine();
+                    System.out.print("Merk: ");
+                    String merk = sc.nextLine();
+                    System.out.print("Ukuran: ");
+                    String ukuran = sc.nextLine();
+                    System.out.print("Harga: ");
+                    double harga = sc.nextDouble();
+                    Pakaian p = new Pakaian(jenis, warna, merk, ukuran, harga);
+                    stk.push(p);
+                } else if (pilih == '2'){
+                    stk.pop();
+                } else if (pilih == '3'){
+                    stk.peek();
+                } else if (pilih == '4'){
+                    stk.print();
+                } else if (pilih == '5'){
                     System.out.println("Terimakasih");
                     break;
+                } else {
+                    System.out.println("Input yang anda masukkan salah");
+                    System.out.println("==============================");
+                    System.out.println("Apakah anda ingin mengulang input? (y/n)");
+                    char pilihan = sc.next().charAt(0);
+                    if (pilihan == 'y'){
+                        continue;
+                    } else {
+                        System.out.println("Terimakasih");
+                        break;
+                    }
                 }
-            }
-        } while (true);
-```
+            } while (true);
+    ```
 hasil run
 <img src = SS2.png>
 
