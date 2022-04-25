@@ -8,7 +8,9 @@
 ### **Pertanyaan 7.2.3**
 1. Data yang dapat ditampung adalah 5
 <img src = SS1.png>
+
 2. data yang tersimpan pada variabel p ialah data pada variabel jenis, warna, merk, ukuran, dan biaya (data dari objek pakaian)
+
 3. fungsi dari do-while untuk perulangan pada statement menambahkan data pakaian diulang Kembali atau tidak.
 
 4. ```java
