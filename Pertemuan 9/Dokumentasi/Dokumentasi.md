@@ -92,12 +92,12 @@ proses operasi perhitungan.
     <img src = SS11.png>
 
 
-    Hasil tanpa perulangan:                  
+    Hasil tanpa perulangan dan inputan:                  
     <img src = SS12TP.png>
     <img src = SS13TP.png>
     <img src = SS14TP.png>
 
-    Hasil dengan perulangan:                 
+    Hasil dengan perulangan dan inputan:                 
     <img src = SS15DP.png>
     <img src = SS16DP.png>
     <img src = SS17DP.png>
